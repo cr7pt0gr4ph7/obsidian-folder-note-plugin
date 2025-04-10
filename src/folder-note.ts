@@ -277,9 +277,9 @@ export class FolderNote {
         var noteBase = this.noteBase;
         parentElem.querySelectorAll(fileSelector)
             .forEach(function (fileElem) {
-                var fileNodeTitle = fileElem.firstElementChild.textContent;
+                var fileNodeTitle = fileElem.querySelector(':scope > .nav-file-title-content')?.textContent;
                 // console.log('fileNoteTitle: ', fileNodeTitle);
-                if (hideSetting && (fileNodeTitle == noteBase)) {
+                if (hideSetting && fileNodeTitle && (fileNodeTitle === noteBase)) {
                     fileElem.addClass('is-folder-note');
                 }
                 else if (!isOutsideMethod) {
