@@ -1,6 +1,6 @@
 {
   "name": "folder-note-plugin",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "This is a folder note plugin for Obsidian (https://obsidian.md)",
   "main": "main.js",
   "scripts": {
